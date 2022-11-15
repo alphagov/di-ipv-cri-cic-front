@@ -96,8 +96,7 @@
         "validationError": "Select anyone photo ID you can take to a Post Office."
       },
       "noDocuments": "I do not have any of these documents"
-      }
-    },
+      },
     "passportExpiry": {
       "pageTitle": "Passport details",
       "header": "When does your passport expire?",
