@@ -95,6 +95,13 @@
       "errors": {
         "validationError": "Select anyone photo ID you can take to a Post Office."
       },
+      "passportExpiry": {
+        "pageTitle": "Passport details",
+        "header": "When does your passport expire?",
+        "body": "We need this information to check that your photo ID is valid. ",
+        "dateOfExpiry": "Date of expiry",
+        "example": "For example, 31 3 2025"
+      },
       "noDocuments": "I do not have any of these documents"
     }
   },
