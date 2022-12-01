@@ -32,3 +32,7 @@ photoIdExpiry:
   title: "Your photo ID has expired"
   one: "We can only accept photo IDs that are currently in date."
   two: "To select another photo ID click Continue"
+
+dateOfBirth:
+  pageTitle: "What is your date of birth?"
+  pageInformationContext: "We need this information to check your identity"

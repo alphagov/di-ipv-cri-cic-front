@@ -45,6 +45,10 @@ module.exports = {
 
     next: "/photoIdSelection"
   },
+  '/dateOfBirth': {
+    fields: ["dateOfBirth"],
+    next: "done"
+  },
   '/done': {
 
   },
