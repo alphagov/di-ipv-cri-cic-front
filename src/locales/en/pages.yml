@@ -41,3 +41,7 @@ nameEntry:
   firstName: "First name"
   middleName: "Middle names"
   middleNameHint: "Leave this blank if you do not have middle names"
+
+dateOfBirth:
+  title: "What is your date of birth?"
+  dobInformationContext: "We need this information to check your identity."

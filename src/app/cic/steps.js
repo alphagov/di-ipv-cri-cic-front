@@ -48,7 +48,13 @@ module.exports = {
   },
   "/nameEntry": {
     fields: ["surname", "firstName", "middleName"],
+    // TODO: Modify nameEntryController for next page (DOB)
+    controller: nameEntry,
     next: nameEntry.prototype.next
+  },
+  "/dateOfBirth": {
+    fields: ["day", "month", "year"],
+    next: "done"
   },
   '/done': {
 

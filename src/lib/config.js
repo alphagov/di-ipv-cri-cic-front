@@ -20,6 +20,7 @@ module.exports = {
       PHOTOCARD_DL_DETAILS: "/photocardDlDetails",
       OTHER_PASSPORT_DETAILS: "/otherPassportDetails",
       NAME_ENTRY: "/nameEntry",
+      DATE_OF_BIRTH: "/dateOfBirth",
     },
     PHOTO_ID_OPTIONS:{
       UK_PASSPORT:"ukPassport",
