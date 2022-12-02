@@ -9,7 +9,7 @@ photoIdChoice:
       label: Biometric residence permit(BRP)
 
     ukPhotocardDL:
-      label: UK photocard driving licence
+      label: UK photocard photo ID
 
     otherPassport:
       label: Non-UK passport
@@ -37,17 +37,25 @@ brpExpiryDate:
     default: "Enter the expiry date as it appears on your BRP"
     after: "The expiry date must be in the future"
 
+surname:
+  label: Surname
+  hint:
+  validation:
+    default: "Enter your last name as it appears on your photo ID"
+    maxlength: "Enter your last name as it appears on your photo ID"
+    regexSurname: "Enter your last name as it appears on your photo ID"
+
 firstName:
   label: First name
-  hint: "This is in section 2 of your licence. You do not need to include your title."
+  hint:
   validation:
-    default: "Enter your first name as it appears on your driving licence"
-    maxlength: "Enter your first name as it appears on your driving licence"
-    regexSurname: "Enter your first name as it appears on your driving licence"
+    default: "Enter your first name as it appears on your photo ID"
+    maxlength: "Enter your first name as it appears on your photo ID"
+    regexFirstname: "Enter your first name as it appears on your photo ID"
 
-surname:
-  label: Last name
-  validation:
-    default: "Enter your last name as it appears on your driving licence"
-    maxlength: "Enter your last name as it appears on your driving licence"
-    regexSurname: "Enter your last name as it appears on your driving licence"
+
+
+middleName:
+  label: Middle names
+  hint: Leave this blank if you do not have any middle names
+  

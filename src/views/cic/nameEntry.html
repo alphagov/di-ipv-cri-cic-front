@@ -12,7 +12,6 @@
         {{ translate("nameEntry.title") }}
     </h1>
     <p> {{ translate("nameEntry.nameEntryContext") }} </p><br>
-    <p> {{ translate("nameEntry.surname") }} </p>
     
     {% call hmpoForm(ctx, {attributes: {onsubmit: 'window.disableFormSubmit()'} }) %}
 
@@ -23,7 +22,7 @@
         }
     })}}
 
-    <p> {{ translate("nameEntry.firstName") }} </p>
+    <p> {{ translate("nameEntry.givenNames") }}</p>
 
     {{ hmpoText(ctx, {
         id: "firstName",
@@ -32,7 +31,6 @@
         }
     })}}
 
-   <p> {{ translate("nameEntry.middleName") }} </p> 
 
     {{ hmpoText(ctx, {
         id: "middleName",

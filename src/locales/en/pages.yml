@@ -35,7 +35,7 @@ photoIdExpiry:
 
 nameEntry:
   title: "What is your name?"
-  nameEntryContext: "This information must match your selected photo ID"
+  nameEntryContext: "This information must match your selected photo ID."
   surname: "Surname"
   givenNames: "Given names"
   firstName: "First name"
