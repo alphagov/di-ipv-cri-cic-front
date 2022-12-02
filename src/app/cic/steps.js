@@ -53,7 +53,7 @@ module.exports = {
     next: nameEntry.prototype.next
   },
   "/dateOfBirth": {
-    fields: ["day", "month", "year"],
+    fields: ["dateOfBirth"],
     next: "done"
   },
   '/done': {

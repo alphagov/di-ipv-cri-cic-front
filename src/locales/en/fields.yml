@@ -60,3 +60,7 @@ middleName:
 dateOfBirth:
   legend: Date of birth
   hint: For example, 31 3 1980
+  validation: 
+    default: "Enter your date of birth as it appears on your photo ID"
+    maxlength: "Enter your date of birth as it appears on your photo ID"
+    regexSurname: "Enter your date of birth as it appears on your photo ID"

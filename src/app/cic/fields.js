@@ -36,5 +36,10 @@ module.exports = {
       "required"
     ]
   },
-  
+  dateOfBirth: {
+    type: "date",
+    journeyKey: "dateOfBirth",
+    validate: [
+        "required", "date"]
+  }
 };
