@@ -1,6 +1,7 @@
 const photoIdSelect = require("./controllers/photoIdSelection");
 const passportDetails = require("./controllers/passportDetails");
 const brpDetails = require("./controllers/brpDetails");
+const nameEntry = require("./controllers/nameEntry")
 const root = require("./controllers/root");
 
 module.exports = {
@@ -41,13 +42,13 @@ module.exports = {
     fields: ["expiryDate"],
     next: "done"
   },
-  '/photoIdExpiry': {
+  "/photoIdExpiry": {
 
     next: "/photoIdSelection"
   },
-  '/dateOfBirth': {
-    fields: ["dateOfBirth"],
-    next: "done"
+  "/nameEntry": {
+    fields: ["surname", "firstName", "middleName"],
+    next: nameEntry.prototype.next
   },
   '/done': {
 
