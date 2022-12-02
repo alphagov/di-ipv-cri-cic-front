@@ -3,6 +3,7 @@
 {% set hmpoPageKey = "nameEntry" %}
 {% set gtmJourney = "cic - nameEntry" %}
 
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
 {% from "hmpo-text/macro.njk" import hmpoText %}
 {% from "hmpo-form/macro.njk" import hmpoForm %}
 
@@ -24,21 +25,18 @@
 
     <p> {{ translate("nameEntry.givenNames") }}</p>
 
-    {{ hmpoText(ctx, {
-        id: "firstName",
-        legend: {
-            classes: "govuk-label"
-        }
-    })}}
+    <div class="govuk-inset-text govuk-!-margin-top-2 govuk-!-padding-top-1">
+
+        {{ hmpoText(ctx, {
+            id: "firstName"
+        })}}
 
 
-    {{ hmpoText(ctx, {
-        id: "middleName",
-        legend: {
-            classes: "govuk-label"
-        }
-    })}}
+        {{ hmpoText(ctx, {
+            id: "middleName"
+        })}}
 
+    </div>
 
     {{ hmpoSubmit(ctx, {id: "continue", text: translate("buttons.next")}) }}
 
