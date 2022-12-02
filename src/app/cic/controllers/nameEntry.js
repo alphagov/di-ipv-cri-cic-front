@@ -1,4 +1,6 @@
-class NameEntryController {
+const BaseController = require("hmpo-form-wizard").Controller;
+
+class NameEntryController extends BaseController {
     locals(req, res, callback) {
         super.locals(req, res, (err, locals) => {
           if (err) {
