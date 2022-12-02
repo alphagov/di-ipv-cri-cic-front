@@ -58,5 +58,5 @@ middleName:
   hint: Leave this blank if you do not have any middle names
   
 dateOfBirth:
-  label: Date of birth
+  legend: Date of birth
   hint: For example, 31 3 1980

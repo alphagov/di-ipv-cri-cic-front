@@ -17,10 +17,7 @@
     {% call hmpoForm(ctx, {attributes: {onsubmit: 'window.disableFormSubmit()'} }) %}
 
     {{ hmpoDate(ctx, {
-        id: "dateOfBirth",
-        legend: {
-            classes: "govuk-label"
-        }
+        id: "dateOfBirth"
     }) }}
 
      {{ hmpoSubmit(ctx, {id: "continue", text: translate("buttons.next")}) }}
