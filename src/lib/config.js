@@ -19,7 +19,7 @@ module.exports = {
       BRP_DETAILS: "/brpDetails",
       PHOTOCARD_DL_DETAILS: "/photocardDlDetails",
       OTHER_PASSPORT_DETAILS: "/otherPassportDetails",
-      NAME_ENTRY: "/nameEntry"
+      NAME_ENTRY: "/nameEntry",
     },
     PHOTO_ID_OPTIONS:{
       UK_PASSPORT:"ukPassport",

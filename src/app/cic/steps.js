@@ -48,7 +48,6 @@ module.exports = {
   },
   "/nameEntry": {
     fields: ["surname", "firstName", "middleName"],
-    controller: nameEntry,
     next: nameEntry.prototype.next
   },
   '/done': {

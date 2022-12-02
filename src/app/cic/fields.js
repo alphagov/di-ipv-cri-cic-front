@@ -23,5 +23,11 @@ module.exports = {
       "date",
       { type: "after", arguments: [new Date().toISOString().split("T")[0]] }
     ]
+  },
+  firstName: {
+    type: "text",
+    validate: [
+      "required"
+    ]
   }
 };

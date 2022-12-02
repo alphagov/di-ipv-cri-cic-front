@@ -37,3 +37,17 @@ brpExpiryDate:
     default: "Enter the expiry date as it appears on your BRP"
     after: "The expiry date must be in the future"
 
+firstName:
+  label: First name
+  hint: "This is in section 2 of your licence. You do not need to include your title."
+  validation:
+    default: "Enter your first name as it appears on your driving licence"
+    maxlength: "Enter your first name as it appears on your driving licence"
+    regexSurname: "Enter your first name as it appears on your driving licence"
+
+surname:
+  label: Last name
+  validation:
+    default: "Enter your last name as it appears on your driving licence"
+    maxlength: "Enter your last name as it appears on your driving licence"
+    regexSurname: "Enter your last name as it appears on your driving licence"
