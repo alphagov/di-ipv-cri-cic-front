@@ -18,9 +18,7 @@
 
     {{ hmpoText(ctx, {
         id: "surname",
-        legend: {
-            classes: "govuk-label"
-        }
+        classes: "govuk-!-width-full"
     })}}
 
     <p> {{ translate("nameEntry.givenNames") }}</p>
@@ -28,12 +26,14 @@
     <div class="govuk-inset-text govuk-!-margin-top-2 govuk-!-padding-top-1">
 
         {{ hmpoText(ctx, {
-            id: "firstName"
+            id: "firstName",
+            classes: "govuk-!-width-three-quarters"
         })}}
 
 
         {{ hmpoText(ctx, {
-            id: "middleName"
+            id: "middleName",
+            classes: "govuk-!-width-three-quarters"
         })}}
 
     </div>
