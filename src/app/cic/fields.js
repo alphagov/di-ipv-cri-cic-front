@@ -26,14 +26,25 @@ module.exports = {
   },
   surname: {
     type: "text",
+    journeyKey: "surname",
     validate: [
-      "required"
+      "required",
+      { type: "regexSurname", fn: (value) => value.match(/^[a-zA-Z .'-]*$/) }
     ]
   },
   firstName: {
     type: "text",
+    journeyKey: "firstName",
     validate: [
-      "required"
+      "required",
+      { type: "regexSurname", fn: (value) => value.match(/^[a-zA-Z .'-]*$/) }
+    ]
+  },
+  middleName: {
+    type: "text",
+    journeyKey: "middleName",
+    validate: [
+      { type: "regexSurname", fn: (value) => value.match(/^[a-zA-Z .'-]*$/) }
     ]
   }
 };
