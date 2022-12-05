@@ -26,14 +26,14 @@ class DateOfBirthController extends DateController {
 
       const isOutsideExpireWindow = inputDate.isAfter(  new Date(
         new Date().getFullYear(),
-        new Date().getMonth() - 18,
-        new Date().getDate()
+        new Date().getMonth(),
+        new Date().getDate() - 1,
       )
         .toISOString()
         .split("T")[0],'months')
-      console.log(isOutsideExpireWindow)
+
       req.sessionModel.set("isOutsideExpireWindow", isOutsideExpireWindow);
-      console.log(isOutsideExpireWindow)
+      
       return next();
     } catch (err) {
       return next(err);
@@ -41,10 +41,11 @@ class DateOfBirthController extends DateController {
   }
     next(req) {
       console.log(req.sessionModel.get("isOutsideExpireWindow"));
-      if (req.sessionModel.get("isOutsideExpireWindow")) {
-
+      if (!req.sessionModel.get("isOutsideExpireWindow")) {
+        console.log(`Succes, DOB is ${req.form.values.dateOfBirth}`)
         return "/landingPage"
       } else{
+        console.log(`Boo, DOB is ${req.form.values.dateOfBirth} and in the future`)
         return "/photoIdExpiry"
       }
     } 
