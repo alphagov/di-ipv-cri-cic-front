@@ -13,41 +13,14 @@ class DateOfBirthController extends DateController {
         return callback(err, locals);
       }
 
-      locals.passportExpiryDate = req.sessionModel.get("passportExpiryDate");
+      locals.dateOfBirth = req.sessionModel.get("dateOfBirth");
 
       callback(err, locals);
     });
   }
 
-  async saveValues(req, res, next) {
-    try {
-      const dateOfBirth = req.form.values.dateOfBirth;
-      const inputDate = moment(dateOfBirth, 'YYYY-MM-DD');
-
-      const isOutsideExpireWindow = inputDate.isAfter(  new Date(
-        new Date().getFullYear(),
-        new Date().getMonth(),
-        new Date().getDate() - 1,
-      )
-        .toISOString()
-        .split("T")[0],'months')
-
-      req.sessionModel.set("isOutsideExpireWindow", isOutsideExpireWindow);
-      
-      return next();
-    } catch (err) {
-      return next(err);
-    }
-  }
     next(req) {
-      console.log(req.sessionModel.get("isOutsideExpireWindow"));
-      if (!req.sessionModel.get("isOutsideExpireWindow")) {
-        console.log(`Succes, DOB is ${req.form.values.dateOfBirth}`)
-        return "/landingPage"
-      } else{
-        console.log(`Boo, DOB is ${req.form.values.dateOfBirth} and in the future`)
-        return "/photoIdExpiry"
-      }
+      return "/done"
     } 
 }
 module.exports = DateOfBirthController; 
