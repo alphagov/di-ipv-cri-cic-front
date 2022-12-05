@@ -40,6 +40,8 @@ module.exports = {
     type: "date",
     journeyKey: "dateOfBirth",
     validate: [
-        "required", "date"]
+        "required", "date", 
+        { type: "before", arguments: [new Date().toISOString().split("T")[0]] },
+      ]
   }
 };
