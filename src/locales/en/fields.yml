@@ -24,7 +24,8 @@ photoIdChoice:
   label: Year
 
 passportExpiryDate:
-  legend: Date of expiry
+  legend: ""
+  label: ""
   hint: "For example, 27 5 2029"
   validation:
     default: "Enter the expiry date as it appears on your passport"
@@ -56,11 +57,11 @@ firstName:
 middleName:
   label: Middle names
   hint: Leave this blank if you do not have any middle names
-  
+
 dateOfBirth:
   legend: Date of birth
   hint: For example, 31 3 1980
-  validation: 
+  validation:
     default: "Enter your date of birth as it appears on your photo ID"
     maxlength: "Enter your date of birth as it appears on your photo ID"
     regexSurname: "Enter your date of birth as it appears on your photo ID"

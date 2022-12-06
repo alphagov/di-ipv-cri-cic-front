@@ -33,7 +33,7 @@ module.exports = {
   "/brpDetails": {
     fields: ["brpExpiryDate"],
     controller: brpDetails,
-    next: "done"
+    next: brpDetails.prototype.next
   },
   "/photocardDlDetails": {
     fields: ["expiryDate"],
@@ -43,7 +43,7 @@ module.exports = {
     fields: ["expiryDate"],
     next: "done"
   },
-  "/photoIdExpiry": {
+  '/photoIdExpiry': {
 
     next: "/photoIdSelection"
   },
