@@ -59,7 +59,8 @@ middleName:
   hint: Leave this blank if you do not have any middle names
 
 dateOfBirth:
-  legend: Date of birth
+  label: ""
+  legend: ""
   hint: For example, 31 3 1980
   validation:
     default: "Enter your date of birth as it appears on your photo ID"
