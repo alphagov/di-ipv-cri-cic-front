@@ -6,7 +6,11 @@ passport:
 
 brp:
   title: "When does your biometric residence permit (BRP) expire?"
-  passportInformationContext: "We need this information to check that your photo ID is valid. "
+  brpInformationContext: "We need this information to check that your photo ID is valid."
+
+photocardDl:
+  title: "When does your UK photocard driving licence expire?"
+  photocardDlInformationContext: "We need this information to check that your photo ID is valid."
 
 photoIdSelection:
   title: "Select a photo ID you can take to a Post Office"

@@ -37,6 +37,14 @@ brpExpiryDate:
     default: "Enter the expiry date as it appears on your BRP"
     after: "The expiry date must be in the future"
 
+photocardDlDetails:
+  legend: ""
+  label: ""
+  hint: "For example, 31 3 2025"
+  validation:
+    default: "Enter the date as it appears on your driving licence"
+    after: "The expiry date must be in the future"
+
 surname:
   label: Surname
   hint:
