@@ -21,8 +21,8 @@ module.exports = {
     next: "photoIdSelection",
   },
   "/photoIdSelection": {
-    controller: photoIdSelect,
     fields: ['photoIdChoice'],
+    controller: photoIdSelect,
     next: photoIdSelect.prototype.next
   },
 
@@ -36,7 +36,7 @@ module.exports = {
     controller: brpDetails,
     next: brpDetails.prototype.next
   },
-  "/photocardDl": {
+  "/photocardDlDetails": {
     fields: ["photocardDlExpiryDate"],
     controller: photocardDlDetails,
     next: photocardDlDetails.prototype.next
