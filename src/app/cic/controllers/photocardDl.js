@@ -25,11 +25,11 @@ class PhotocardDlController extends DateController {
 
       const isOutsideExpireWindow = inputDate.isAfter(  new Date(
         new Date().getFullYear(),
-        new Date().getMonth() - 18,
+        new Date().getMonth(),
         new Date().getDate()
       )
         .toISOString()
-        .split("T")[0],'months')
+        .split("T")[0],'days')
 
       req.sessionModel.set("isOutsideExpireWindow", isOutsideExpireWindow);
       req.sessionModel.set("photocardDlExpiryDate", photocardDlExpiryDate);
