@@ -37,7 +37,7 @@ brpExpiryDate:
     default: "Enter the expiry date as it appears on your BRP"
     after: "The expiry date must be in the future"
 
-photocardDlDetails:
+photocardDlExpiryDate:
   legend: ""
   label: ""
   hint: "For example, 31 3 2025"
