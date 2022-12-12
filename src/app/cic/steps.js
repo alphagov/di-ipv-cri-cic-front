@@ -36,7 +36,7 @@ module.exports = {
     controller: brpDetails,
     next: brpDetails.prototype.next
   },
-  "/photocardDlDetails": {
+  "/photocardDl": {
     fields: ["photocardDlExpiryDate"],
     controller: photocardDlDetails,
     next: photocardDlDetails.prototype.next

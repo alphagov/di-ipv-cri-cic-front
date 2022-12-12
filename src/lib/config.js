@@ -17,7 +17,7 @@ module.exports = {
       CIC: "/",
       PASSPORT_DETAILS: "/passportDetails",
       BRP_DETAILS: "/brpDetails",
-      PHOTOCARD_DL_DETAILS: "/photocardDlDetails",
+      PHOTOCARD_DL_DETAILS: "/photocardDl",
       OTHER_PASSPORT_DETAILS: "/otherPassportDetails",
       NAME_ENTRY: "/nameEntry",
       DATE_OF_BIRTH: "/dateOfBirth",
