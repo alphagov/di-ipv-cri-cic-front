@@ -2,3 +2,21 @@ $govuk-assets-path: "/public/";
 
 @import "../../../node_modules/govuk-frontend/govuk/all";
 @import "../../../node_modules/hmpo-components/all";
+
+@media (min-width: 40.0625em) {
+.govuk-list--bullet>li, .govuk-list--number>li {
+    margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 40.0625em) {
+.govuk-inset-text {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    }
+}
+
+@media (min-width: 40.0625em) {}
+.govuk-body, main p, .govuk-body-m {
+    margin-bottom: 5px;
+}
