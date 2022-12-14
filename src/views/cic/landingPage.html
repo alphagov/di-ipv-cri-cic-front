@@ -7,29 +7,38 @@
 
 {% block content %}
 
-<h1 class="govuk-heading-l">{{ "landingPage.title" | translate }}</h1>
+<div class="govuk-width-container">
+<div class="govuk-grid-column-three-quarters">
+  
+  <h1 class="govuk-heading-l">{{ "landingPage.title" | translate }}</h1>
 
-<h2 class="govuk-heading-m">{{ "landingPage.body" | translate }}</h2>
+    <h2 class="govuk-heading-m">{{ "landingPage.body" | translate }}</h2>
 
-<ol class="govuk-list govuk-list--number">
-  <li>{{ "landingPage.instructions.steps.one" | translate }}</li>
-  <li>{{ "landingPage.instructions.steps.two" | translate }}</li>
-  <li>{{ "landingPage.instructions.steps.three" | translate }}</li>
-</ol>
+      <ol class="govuk-list govuk-list--number">
+        <li>{{ "landingPage.instructions.steps.one" | translate }}</li>
+        <li>{{ "landingPage.instructions.steps.two" | translate }}</li>
+        <li>{{ "landingPage.instructions.steps.three" | translate }}</li>
+      </ol>
+</div>
+</div>
 
 
 {% set insetBody %}
-<div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters">
    <p>
      {{ "common.postoffice.service" | translate }}
      <a href={{ "common.postoffice.pathToPoBranchSearch" | translate }}> {{ "common.postoffice.postofficeLink" | translate }}</a>
    </p>
-</div>
+
 {% endset %}
 
 {{ govukInsetText({ html: insetBody }) }}
+  </div>
+</div>
 
-
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters">
 <h2 class="govuk-heading-m">{{ "landingPage.dataInfo.title" | translate }}</h2>
 <p>{{ "landingPage.dataInfo.body" | translate }}</p>
 
@@ -38,6 +47,8 @@
   {{ hmpoSubmit(ctx, {id: "continue", text: translate("buttons.next")}) }}
 {% endblock %}
 {% endcall %}
+  </div>
+</div>
 
 
 {% include "common/confirmIdentityAnotherWay.html" %}
