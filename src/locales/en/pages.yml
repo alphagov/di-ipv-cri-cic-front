@@ -4,6 +4,11 @@ passport:
   title: "When does your UK passport expire?"
   passportInformationContext: "We need this information to check that your photo ID is valid."
 
+nonUKPassport:
+  title: "When does your non-UK biometric passport expire?"
+  passportInformationContext: "We need this information to check that your photo ID is valid."
+
+
 brp:
   title: "When does your biometric residence permit (BRP) expire?"
   brpInformationContext: "We need this information to check that your photo ID is valid."
@@ -37,7 +42,7 @@ photoIdExpiry:
   one: "We can only accept photo IDs that are currently in date. Expired UK passports are acceptable up until 18 months after the expiry date."
   two: "If you entered the wrong expiry date, go back to enter the correct date."
   three: "To select another photo ID, click Continue."
-  
+
 nameEntry:
   title: "What is your name?"
   nameEntryContext: "Enter your full name as it appears on your photo ID."

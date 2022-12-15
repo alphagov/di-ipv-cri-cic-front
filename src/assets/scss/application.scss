@@ -3,22 +3,27 @@ $govuk-assets-path: "/public/";
 @import "../../../node_modules/govuk-frontend/govuk/all";
 @import "../../../node_modules/hmpo-components/all";
 
-.govuk-heading-m, .hmpo-auto-submit h1, h2 {
+// Adding a new rule in case adjusting the component CSS directly is bad practice
+.govuk-radios__item {
+    @include govuk-responsive-margin(6, $direction: "bottom", $important: false, $adjustment: false);
+  }
+  
+  .govuk-heading-m, .hmpo-auto-submit h1, h2 {
     margin-bottom: 30px;
-}
-
-.govuk-list--bullet>li, .govuk-list--number>li {
+  }
+  
+  .govuk-list--bullet>li, .govuk-list--number>li {
     margin-bottom: 15px;
     }
-
-.govuk-inset-text {
+  
+  .govuk-inset-text {
     margin-bottom: 30px;
-}
-
-.govuk-body, main p, .govuk-body-m {
+  }
+  
+  .govuk-body, main p, .govuk-body-m {
     margin-bottom: 30px;
-}
-
-.govuk-button {
+  }
+  
+  .govuk-button {
     margin-bottom: 30px;
-}
+  }

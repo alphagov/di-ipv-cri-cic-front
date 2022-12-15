@@ -10,10 +10,10 @@ module.exports = {
       value: APP.PHOTO_ID_OPTIONS.UK_PASSPORT,
       hint: {text: APP.UK_PASSPORT_HINT}
     }, APP.PHOTO_ID_OPTIONS.UK_PHOTOCARD_DL, APP.PHOTO_ID_OPTIONS.BRP,
-      {
-        value: APP.PHOTO_ID_OPTIONS.OTHER_PASSPORT,
-        hint: {text: APP.OTHER_PASSPORT_HINT}
-      }],
+    {
+      value: APP.PHOTO_ID_OPTIONS.OTHER_PASSPORT,
+      hint: {text: APP.NON_UK_PASSPORT_HINT}
+    }],
     validate: ["required"]
   },
   passportExpiryDate: {
@@ -21,14 +21,29 @@ module.exports = {
     journeyKey: "passportExpiryDate",
     validate: ["required", "date"],
   },
-  brpExpiryDate: {
+  nonUKPassportExpiryDate: {
     type: "date",
-    journeyKey: "brpExpiryDate",
-    validate: ["required", "date"]
+    journeyKey: "nonUKPassportExpiryDate",
+    validate: ["required", "date"],
   },
   photocardDlExpiryDate: {
     type: "date",
     journeyKey: "photocardDlExpiryDate",
+    validate: ["required", "date", 
+      { type: "after", arguments: [
+        new Date(
+          new Date().getFullYear(),
+          new Date().getMonth(),
+          new Date().getDate()
+        )
+          .toISOString()
+          .split("T")[0],
+      ] }
+    ] 
+  },
+  brpExpiryDate: {
+    type: "date",
+    journeyKey: "brpExpiryDate",
     validate: ["required", "date"]
   },
   surname: {
