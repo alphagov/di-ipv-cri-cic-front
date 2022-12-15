@@ -3,6 +3,10 @@ $govuk-assets-path: "/public/";
 @import "../../../node_modules/govuk-frontend/govuk/all";
 @import "../../../node_modules/hmpo-components/all";
 
+.govuk-heading-m, .hmpo-auto-submit h1, h2 {
+    margin-bottom: 30px;
+}
+
 .govuk-list--bullet>li, .govuk-list--number>li {
     margin-bottom: 15px;
     }
@@ -15,6 +19,6 @@ $govuk-assets-path: "/public/";
     margin-bottom: 30px;
 }
 
-.govuk-button:before {
+.govuk-button {
     margin-bottom: 30px;
 }
