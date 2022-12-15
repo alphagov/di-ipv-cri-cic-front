@@ -4,11 +4,18 @@
 {% set hmpoTitle = landingPage.pageTitle %}
 {% set hmpoPageKey = "landingPage" %}
 {% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+
+{% block header %}
+  {{ govukHeader ({
+    serviceName: translate("govuk.serviceName")
+  }) }}
+{% endblock %}
 
 {% block content %}
 
-<div class="govuk-width-container">
-<div class="govuk-grid-column-three-quarters">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters">
   
   <h1 class="govuk-heading-l">{{ "landingPage.title" | translate }}</h1>
 
@@ -19,13 +26,11 @@
         <li>{{ "landingPage.instructions.steps.two" | translate }}</li>
         <li>{{ "landingPage.instructions.steps.three" | translate }}</li>
       </ol>
-</div>
-</div>
+
 
 
 {% set insetBody %}
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-three-quarters">
+
    <p>
      {{ "common.postoffice.service" | translate }}
      <a href={{ "common.postoffice.pathToPoBranchSearch" | translate }}> {{ "common.postoffice.postofficeLink" | translate }}</a>
@@ -34,11 +39,9 @@
 {% endset %}
 
 {{ govukInsetText({ html: insetBody }) }}
-  </div>
-</div>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-three-quarters">
+
+
 <h2 class="govuk-heading-m">{{ "landingPage.dataInfo.title" | translate }}</h2>
 <p>{{ "landingPage.dataInfo.body" | translate }}</p>
 
