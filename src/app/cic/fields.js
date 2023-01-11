@@ -13,7 +13,9 @@ module.exports = {
     {
       value: APP.PHOTO_ID_OPTIONS.OTHER_PASSPORT,
       hint: {text: APP.NON_UK_PASSPORT_HINT}
-    }],
+    }, 
+      APP.PHOTO_ID_OPTIONS.YOUNG_SCOT_NATIONAL_ENTITLEMENT_CARD,
+    ],
     validate: ["required"]
   },
   passportExpiryDate: {
@@ -34,6 +36,11 @@ module.exports = {
   brpExpiryDate: {
     type: "date",
     journeyKey: "brpExpiryDate",
+    validate: ["required", "date"]
+  },
+  youngScotNationalEntitlementCardExpiryDate: {
+    type: "date",
+    journeyKey: "youngScotNationalEntitlementCardExpiryDate",
     validate: ["required", "date"]
   },
   surname: {
